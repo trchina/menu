@@ -1,0 +1,24 @@
+{
+    "name": "keling/menu",
+    "authors": [
+        {
+            "name": "潘亮mac",
+            "email": "1104534940@qq.com"
+        }
+    ],
+    "require": {
+        "betterde/tree": "^1.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keling\\Menu\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Keling\\Menu\\MenuServiceProvider"
+            ]
+        }
+    }
+}
