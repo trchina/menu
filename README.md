@@ -1,8 +1,7 @@
 
 ### 文件迁移
 ```
-php artisan vendor:publish --provider="Keling\Menu
-MenuServiceProvider"
+php artisan vendor:publish --provider="Keling\Menu\MenuServiceProvider"
 ```
 
 ### 数据库迁移
