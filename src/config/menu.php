@@ -7,5 +7,5 @@
  * Time: 下午7:10
  */
 return [
-    'Redis' => true // true 开始redis缓存  false 开启
+    'Redis' => false // true 开始redis缓存  false 开启
 ];
