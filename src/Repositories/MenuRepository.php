@@ -2,10 +2,10 @@
 
 namespace Keling\Menu\Repositories;
 
+use Betterde\Tree\Generator;
 use Keling\Menu\Models\Menu;
 
 use Betterde\Tree\Exceptions\TreeException;
-use Keling\Menu\Repositories\Tree;
 
 class MenuRepository
 {
@@ -75,8 +75,8 @@ class MenuRepository
 
         if ($is != 1)
         {
-            $Tree = new Tree();
-            $data =$Tree->make($MenuData, 'id', 'parent_id', 'collection', $min);
+            $generator = new Generator();
+            $data = $generator->make($MenuData, 'id', 'parent_id', 'children', $min);
         }
         else
         {
